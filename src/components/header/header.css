@@ -8,6 +8,9 @@ header {
   height: 100%;
   position: relative;
 }
+.header__container h5 h1 {
+  color: #fff !important;
+}
 
 .cta {
   margin-top: 2.5rem;

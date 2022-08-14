@@ -3,12 +3,15 @@ import CTA from "./CTA";
 import "./header.css";
 import me from "../../assets/giang.png";
 import HeaderSocial from "./HeaderSocial";
+
 const Header = () => {
   return (
     <header id="#">
       <div className="container header__container">
-        <h5>Hello I'm</h5>
-        <h1>Trường Giang</h1>
+        <h5 style={{ color: "#fff" }}>Hello I'm</h5>
+        <h1 style={{ color: "var(--color-primary)" }}>
+          Dương Trường Giang (Dyno)
+        </h1>
         <h5 className="text-light">Full-Stack Developer</h5>
         <CTA />
         <HeaderSocial />

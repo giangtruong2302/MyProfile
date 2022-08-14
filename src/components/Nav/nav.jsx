@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./nav.css";
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
@@ -7,27 +7,61 @@ import { BiMessageSquareDetail } from "react-icons/bi";
 
 import { RiServiceLine } from "react-icons/ri";
 import { SiTransportforlondon } from "react-icons/si";
+import { GiBatBlade } from "react-icons/gi";
 const Nav = () => {
+  const [activeNav, setActiveNav] = useState("#");
   return (
     <nav>
-      <a href="#" className="active">
-        <AiOutlineHome />
-      </a>
-      <a href="#about">
-        <AiOutlineUser />
-      </a>
-      <a href="#contact">
-        <BiBook />
-      </a>
-      <a href="#experience">
-        <BiMessageSquareDetail />
-      </a>
-      <a href="#portfolio">
-        <SiTransportforlondon />
-      </a>
-      <a href="#service">
-        <RiServiceLine />
-      </a>
+      <abbr title="Home">
+        <a href="#" className={activeNav === "#" ? "active" : ""}>
+          <AiOutlineHome />
+        </a>
+      </abbr>
+      <abbr title="About">
+        <a
+          href="#about"
+          onClick={() => setActiveNav("#about")}
+          className={activeNav === "#about" ? "active" : ""}
+        >
+          <AiOutlineUser />
+        </a>
+      </abbr>
+      <abbr title="Experience">
+        <a
+          href="#experience"
+          onClick={() => setActiveNav("#experience")}
+          className={activeNav === "#experience" ? "active" : ""}
+        >
+          <GiBatBlade />
+        </a>
+      </abbr>
+      <abbr title="Service">
+        <a
+          href="#service"
+          onClick={() => setActiveNav("#service")}
+          className={activeNav === "#service" ? "active" : ""}
+        >
+          <RiServiceLine />
+        </a>
+      </abbr>
+      <abbr title="Portfolio">
+        <a
+          href="#portfolio"
+          onClick={() => setActiveNav("#portfolio")}
+          className={activeNav === "#portfolio" ? "active" : ""}
+        >
+          <SiTransportforlondon />
+        </a>
+      </abbr>
+      <abbr title="contact">
+        <a
+          href="#contact"
+          onClick={() => setActiveNav("#contact")}
+          className={activeNav === "#contact" ? "active" : ""}
+        >
+          <BiBook />
+        </a>
+      </abbr>
     </nav>
   );
 };
