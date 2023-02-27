@@ -17,7 +17,10 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={port1} alt="" />
           </div>
-          <h3>This is a portfolio</h3>
+          <h3>
+            GHGYM (Building a website for managing the gym system and supporting
+            the registration of gym schedules)
+          </h3>
           <div className="portfolio__item-cta">
             <a
               href="https://github.com/truonggiang2302"
@@ -36,7 +39,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={port2} alt="" />
           </div>
-          <h3>This is a portfolio</h3>
+          <h3>Spotify plus </h3>
           <div className="portfolio__item-cta">
             <a
               href="https://github.com/truonggiang2302"
@@ -55,7 +58,10 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={port3} alt="" />
           </div>
-          <h3>This is a portfolio</h3>
+          <h3>
+            Kanban Web-App (Website to support task management, project
+            management for individuals and businesses)
+          </h3>
           <div className="portfolio__item-cta">
             <a
               href="https://github.com/truonggiang2302"
